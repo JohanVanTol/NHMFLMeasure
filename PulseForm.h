@@ -93,6 +93,7 @@ __published:	// IDE-managed Components
 	TCheckBox *P6CheckBox;
 	TCheckBox *P7CheckBox;
 	TCheckBox *P8CheckBox;
+	TCheckBox *BaseLineCorrectionCheckBox;
     void __fastcall SetButtonClick(TObject *Sender);
 	void __fastcall OKBitButtonClick(TObject *Sender);
 	void __fastcall CancelBitButtonClick(TObject *Sender);
