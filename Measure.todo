@@ -1,0 +1,3 @@
+{TODO : 
+Infinium read routines.
+Read the preamble always to get origin and scale values.}{TODO 1 -oHans -cChanges : Averaging, rename temporary files when saving average data}{DONE 1 -oHans -cChanges : Change CommentDialog}{DONE 1 -oHans -cAdditions : Add Printer Routines} 

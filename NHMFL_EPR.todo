@@ -1,0 +1,5 @@
+{TODO -oHans -cAdditions : Configure ADC channel read during measurement}
+{TODO -oHans -cAdditions : I/O routine for the frequency setting VDI source}
+{DONE :
+Infinium read routines.
+Read the preamble always to get origin and scale values.}{DONE 1 -oHans -cChanges : Averaging, rename temporary files when saving average data}{DONE 1 -oHans -cChanges : Change CommentDialog}{DONE 1 -oHans -cAdditions : Add Printer Routines}

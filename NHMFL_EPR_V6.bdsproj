@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">CPlusPlusBuilder.Personality</Option>
+			<Option Name="ProjectType">CppVCLApplication</Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{96D641F2-09C9-4142-8F0B-50BE8C5DEAE1}</Option>
+		</Option>
+	</PersonalityInfo>
+	<CPlusPlusBuilder.Personality>
+		<BCBPROJECT>
+      <project version="10.0">
+        <property category="build.config" name="active" value="0"/>
+        <property category="build.config" name="count" value="1"/>
+        <property category="build.config" name="excludedefaultforzero" value="0"/>
+        <property category="build.config.0" name="builddir" value="Debug"/>
+        <property category="build.config.0" name="key" value="Debug_Build"/>
+        <property category="build.config.0" name="name" value="Debug Build"/>
+        <property category="build.config.0" name="settings.win32b" value="default"/>
+        <property category="build.config.0" name="type" value="Toolset"/>
+        <property category="build.config.0" name="win32.win32b.builddir" value="Debug_Build"/>
+        <property category="build.config.1" name="key" value="Release_Build"/>
+        <property category="build.config.1" name="name" value="Release Build"/>
+        <property category="build.config.1" name="settings.win32b" value="default"/>
+        <property category="build.config.1" name="type" value="Toolset"/>
+        <property category="build.config.1" name="win32.win32b.builddir" value="Release_Build"/>
+        <property category="build.node" name="lastconfig" value="Debug_Build"/>
+        <property category="build.node" name="libraries" value="vcl.lib rtl.lib"/>
+        <property category="build.node" name="name" value="NHMFL_EPR_V6.exe"/>
+        <property category="build.node" name="packages" value="vclx;rtl;vcl;dbrtl;vcldb;bdertl;bcbsmp;inetdb;inet"/>
+        <property category="build.node" name="sparelibs" value="rtl.lib vcl.lib"/>
+        <property category="build.node" name="use_packages" value="0"/>
+        <property category="build.platform" name="active" value="win32"/>
+        <property category="build.platform" name="win32.Debug_Build.toolset" value="win32b"/>
+        <property category="build.platform" name="win32.Release_Build.toolset" value="win32b"/>
+        <property category="build.platform" name="win32.default" value="win32b"/>
+        <property category="build.platform" name="win32.enabled" value="1"/>
+        <property category="build.platform" name="win32.win32b.enabled" value="1"/>
+        <property category="win32.*.win32b.dcc32" name="param.filenames.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.listfile.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.objfile.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.xreffile.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="container.SelectedOptimizations.containerenabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="container.SelectedWarnings.containerenabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.D.arg.1" value="_DEBUG"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.D.arg.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.D.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.O2.enabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.Od.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.bcc32" name="option.disablewarns.enabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.$D.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.$O.enabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.D.arg.1" value="DEBUG"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.D.arg.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.D.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.dcc32" name="option.V.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.D.arg.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.D.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.L.arg.1" value="$(BDS)\lib\debug"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.L.arg.merge" value="1"/>
+        <property category="win32.Debug_Build.win32b.ilink32" name="option.L.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.tasm32" name="option.z.enabled" value="1"/>
+        <property category="win32.Debug_Build.win32b.tasm32" name="option.zd.enabled" value="0"/>
+        <property category="win32.Debug_Build.win32b.tasm32" name="option.zi.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="container.SelectedOptimizations.containerenabled" value="0"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.5.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.6.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.D.arg.1" value="NDEBUG"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.D.arg.merge" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.D.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.align-3.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.align-4.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.k.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.r.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.v.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.bcc32" name="option.y.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.dcc32" name="option.$D.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.dcc32" name="option.$O.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.dcc32" name="option.V.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="container.SelectedWarnings.containerenabled" value="1"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.-w-.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.Gpd.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.Gpr.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.L.arg.1" value="$(BDS)\lib\release"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.L.arg.merge" value="1"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.L.enabled" value="1"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.m.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.map_segments.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.w.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.ilink32" name="option.x.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.tasm32" name="option.z.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.tasm32" name="option.zd.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.tasm32" name="option.zi.enabled" value="0"/>
+        <property category="win32.Release_Build.win32b.tasm32" name="option.zn.enabled" value="1"/>
+        <optionset name="all_configurations">
+          <property category="node" name="displayname" value="All Configurations"/>
+          <property category="win32.*.win32b.bcc32" name="container.SelectedOptimizations.containerenabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="container.SelectedWarnings.containerenabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.3.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.4.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.5.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.6.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.A.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.AK.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.AU.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.1" value="c:\program files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.10" value="..\wsc"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.11" value="C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.12" value="$(BDS)\include\dinkumware"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.2" value="$(BDS)\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.3" value="C:\Program Files\Borland\CBuilder6\Projects"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.4" value=".."/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.5" value="C:\Program Files\Borland\CBuilder5\Bin"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.6" value="C:\Program Files\Common Files\Borland Shared\Images\Buttons"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.7" value="C:\Program Files\Borland"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.8" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.9" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.Jgi.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.Jgx.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.O1.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.O2.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.Od.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.Q.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.T.arg" value="kh30000"/>
+          <property category="win32.*.win32b.bcc32" name="option.T.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.T.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.V0.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.V1.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.Ve.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.Vmd.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.Vmm.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.Vms.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.Vx.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.X.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.align-1.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.align-2.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.align-3.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.align-4.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.align-5.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.b.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.disablewarns.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.fff.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.k.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.n.arg.1" value="obj\"/>
+          <property category="win32.*.win32b.bcc32" name="option.n.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.n.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.noregistervars.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.p.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.pm.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.pr.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.ps.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.r.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.rd.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.1" value="NO_STRICT"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.2" value="_RTLDLL"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.sysdefines.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.tW.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.tWM.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.v.enabled" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.vi.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.w.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.winl.enabled" value="0"/>
+          <property category="win32.*.win32b.bcc32" name="option.y.enabled" value="1"/>
+          <property category="win32.*.win32b.brcc32" name="option.D.arg.1" value="_DEBUG"/>
+          <property category="win32.*.win32b.brcc32" name="option.D.arg.merge" value="1"/>
+          <property category="win32.*.win32b.brcc32" name="option.D.enabled" value="0"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.1" value="C:\Program Files\Borland\CBuilder6\Projects"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.10" value="$(BDS)\include\dinkumware"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.2" value=".."/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.3" value="C:\Program Files\Borland\CBuilder5\Bin"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.4" value="C:\Program Files\Common Files\Borland Shared\Images\Buttons"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.5" value="C:\Program Files\Borland"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.6" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.7" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.8" value="..\wsc"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.9" value="C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.arg.merge" value="1"/>
+          <property category="win32.*.win32b.brcc32" name="option.INCLUDEPATH.enabled" value="1"/>
+          <property category="win32.*.win32b.brcc32" name="option.outputdir.arg.1" value="obj\"/>
+          <property category="win32.*.win32b.brcc32" name="option.outputdir.arg.merge" value="1"/>
+          <property category="win32.*.win32b.brcc32" name="option.outputdir.enabled" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.$.arg.1" value="Y+"/>
+          <property category="win32.*.win32b.dcc32" name="option.$.arg.2" value="W"/>
+          <property category="win32.*.win32b.dcc32" name="option.$.arg.merge" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.$.enabled" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.$O.enabled" value="0"/>
+          <property category="win32.*.win32b.dcc32" name="option.I.arg.1" value="c:\program files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.dcc32" name="option.I.arg.2" value="$(BDS)\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.dcc32" name="option.I.arg.merge" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.I.enabled" value="0"/>
+          <property category="win32.*.win32b.dcc32" name="option.N0.arg.1" value="obj\"/>
+          <property category="win32.*.win32b.dcc32" name="option.N0.arg.merge" value="0"/>
+          <property category="win32.*.win32b.dcc32" name="option.N0.enabled" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.NO.arg.1" value="obj\"/>
+          <property category="win32.*.win32b.dcc32" name="option.NO.arg.merge" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.NO.enabled" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.O.arg.1" value="c:\program files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.dcc32" name="option.O.arg.2" value="$(BDS)\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.dcc32" name="option.O.arg.merge" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.O.enabled" value="0"/>
+          <property category="win32.*.win32b.dcc32" name="option.R.arg.1" value="c:\program files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.dcc32" name="option.R.arg.2" value="$(BDS)\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.dcc32" name="option.R.arg.merge" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.R.enabled" value="0"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.1" value="c:\program files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.2" value="$(BDS)\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.3" value=".\"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.4" value="$(BDS)\lib"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.5" value="$(BDS)\lib\obj"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.merge" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.enabled" value="1"/>
+          <property category="win32.*.win32b.dcc32" name="param.filenames.merge" value="1"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.1" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.10" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.100" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.101" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.102" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.103" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.104" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.105" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.106" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.107" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.108" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.109" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.11" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.110" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.111" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.112" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.113" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.114" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.115" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.116" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.117" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.118" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.119" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.12" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.120" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.121" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.122" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.123" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.124" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.125" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.126" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.127" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.128" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.129" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.13" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.130" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.131" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.132" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.133" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.134" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.135" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.136" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.137" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.138" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.139" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.14" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.140" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.141" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.142" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.143" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.144" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.145" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.146" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.147" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.148" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.149" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.15" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.150" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.151" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.152" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.153" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.154" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.155" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.156" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.157" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.158" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.159" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.16" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.160" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.161" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.162" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.163" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.164" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.165" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.166" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.167" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.168" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.169" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.17" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.170" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.171" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.172" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.173" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.174" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.175" value="$(BDS)\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.18" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.19" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.2" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.20" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.21" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.22" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.23" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.24" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.25" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.26" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.27" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.28" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.29" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.3" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.30" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.31" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.32" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.33" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.34" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.35" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.36" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.37" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.38" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.39" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.4" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.40" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.41" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.42" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.43" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.44" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.45" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.46" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.47" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.48" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.49" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.5" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.50" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.51" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.52" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.53" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.54" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.55" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.56" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.57" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.58" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.59" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.6" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.60" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.61" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.62" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.63" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.64" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.65" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.66" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.67" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.68" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.69" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.7" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.70" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.71" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.72" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.73" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.74" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.75" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.76" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.77" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.78" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.79" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.8" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.80" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.81" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.82" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.83" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.84" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.85" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.86" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.87" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.88" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.89" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.9" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.90" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.91" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.92" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.93" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.94" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.95" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.96" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.97" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.98" value="files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.99" value="c:\program"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.merge" value="1"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.D.arg" value="&quot;&quot;"/>
+          <property category="win32.*.win32b.ilink32" name="option.D.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.D.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.GD.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.I.arg.1" value="obj"/>
+          <property category="win32.*.win32b.ilink32" name="option.I.arg.merge" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.I.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.1" value="c:\program files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.10" value="$(BDS)\lib"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.2" value="$(BDS)\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.3" value="C:\Program Files\Borland\CBuilder6\Projects"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.4" value=".."/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.5" value="C:\Program Files\Borland\CBuilder5\Bin"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.6" value="C:\Program Files\Common Files\Borland Shared\Images\Buttons"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.7" value="C:\Program Files\Borland"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.8" value="C:\Program Files\Borland\CBuilder4\Projects"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.9" value="$(BDS)\lib\obj"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.Tpe.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.aa.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.dynamicrtl.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.1" value="c:\program files\borland\bds\4.0\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.2" value="$(BDS)\ObjRepos\Cpp"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.arg.1" value="bin\"/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.outputdir.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.s.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.v.enabled" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.1" value="$(LIBRARIES)"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.2" value="import32.lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.3" value="cp32mti.lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.libfiles.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.1" value="c0w32.obj"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.2" value="Memmgr.Lib"/>
+          <property category="win32.*.win32b.ilink32" name="param.objfiles.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.d.arg.1" value="_DEBUG"/>
+          <property category="win32.*.win32b.tasm32" name="option.d.arg.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.d.enabled" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.1" value="C:\Program Files\Borland\CBuilder6\Projects"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.10" value="$(BDS)\include\dinkumware"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.2" value=".."/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.3" value="C:\Program Files\Borland\CBuilder5\Bin"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.4" value="C:\Program Files\Common Files\Borland Shared\Images\Buttons"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.5" value="C:\Program Files\Borland"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.6" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.7" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.8" value="..\wsc"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.9" value="C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.arg.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.i.enabled" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.outputdir.arg.1" value="obj\"/>
+          <property category="win32.*.win32b.tasm32" name="option.outputdir.arg.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.outputdir.enabled" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.w2.enabled" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="option.zi.enabled" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="param.listfile.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="param.objfile.merge" value="1"/>
+          <property category="win32.*.win32b.tasm32" name="param.xreffile.merge" value="1"/>
+        </optionset>
+      </project>
+      <FILELIST>
+        <FILE FILENAME="NHMFL_EPR_V6.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="NHMFL_EPR_V6" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="ChildWin.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChildWin" FORMNAME="DataFile" DESIGNCLASS="" ADDITIONAL="ChildWin.h"/>
+        <FILE FILENAME="Measure.res" CONTAINERID="ResTool" LOCALCOMMAND="" UNITNAME="Measure" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="AboutBox.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="AboutBox" FORMNAME="EPRAboutBox" DESIGNCLASS="" ADDITIONAL="AboutBox.h"/>
+        <FILE FILENAME="Myplot20.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Myplot20" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="Mydata.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Mydata" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="GPIB_NatlInstrum.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="GPIB_NatlInstrum" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="Measmain.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Measmain" FORMNAME="MainForm" DESIGNCLASS="" ADDITIONAL="Measmain.h"/>
+        <FILE FILENAME="ErrorBx.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ErrorBx" FORMNAME="ErrorBox" DESIGNCLASS="" ADDITIONAL="ErrorBx.h"/>
+        <FILE FILENAME="GPIBTest.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="GPIBTest" FORMNAME="GPIBTestForm" DESIGNCLASS="" ADDITIONAL="GPIBTest.h"/>
+        <FILE FILENAME="RFSourceDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="RFSourceDlg" FORMNAME="RFSourceDialog" DESIGNCLASS="" ADDITIONAL="RFSourceDlg.h"/>
+        <FILE FILENAME="RFAmplDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="RFAmplDlg" FORMNAME="RFAmplifierDialog" DESIGNCLASS="" ADDITIONAL="RFAmplDlg.h"/>
+        <FILE FILENAME="BoxcarDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="BoxcarDlg" FORMNAME="BoxcarDialog" DESIGNCLASS="" ADDITIONAL="BoxcarDlg.h"/>
+        <FILE FILENAME="Valid.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Valid" FORMNAME="" DESIGNCLASS="" ADDITIONAL="Valid.h"/>
+        <FILE FILENAME="RS232Test.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="RS232Test" FORMNAME="RS232TestForm" DESIGNCLASS="" ADDITIONAL="RS232Test.h"/>
+        <FILE FILENAME="..\wsc\Wsc32.lib" CONTAINERID="LibTool" LOCALCOMMAND="" UNITNAME="Wsc32" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="IsoBusDevices.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="IsoBusDevices" FORMNAME="" DESIGNCLASS="" ADDITIONAL="IsoBusDevices.h"/>
+        <FILE FILENAME="ITCDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ITCDlg" FORMNAME="ITCDialog" DESIGNCLASS="" ADDITIONAL="ITCDlg.h"/>
+        <FILE FILENAME="ILMDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ILMDlg" FORMNAME="ILMDialog" DESIGNCLASS="" ADDITIONAL="ILMDlg.h"/>
+        <FILE FILENAME="IPS20Dlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="IPS20Dlg" FORMNAME="IPS20Dialog" DESIGNCLASS="" ADDITIONAL="IPS20Dlg.h"/>
+        <FILE FILENAME="IPS120Dlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="IPS120Dlg" FORMNAME="IPS120Dialog" DESIGNCLASS="" ADDITIONAL="IPS120Dlg.h"/>
+        <FILE FILENAME="HeaterOnChkDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HeaterOnChkDlg" FORMNAME="HeaterOnCheckForm" DESIGNCLASS="" ADDITIONAL="HeaterOnChkDlg.h"/>
+        <FILE FILENAME="TimerFrm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TimerFrm" FORMNAME="TimerForm" DESIGNCLASS="" ADDITIONAL="TimerFrm.h"/>
+        <FILE FILENAME="ZeroSweepCoilFrm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ZeroSweepCoilFrm" FORMNAME="ZeroSweepCoilForm" DESIGNCLASS="" ADDITIONAL="ZeroSweepCoilFrm.h"/>
+        <FILE FILENAME="MainFieldWaitFrm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MainFieldWaitFrm" FORMNAME="MainFieldWaitForm" DESIGNCLASS="" ADDITIONAL="MainFieldWaitFrm.h"/>
+        <FILE FILENAME="HeaterOffChkDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HeaterOffChkDlg" FORMNAME="HeaterOffCheckForm" DESIGNCLASS="" ADDITIONAL="HeaterOffChkDlg.h"/>
+        <FILE FILENAME="DMMDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DMMDlg" FORMNAME="DMM1Form" DESIGNCLASS="" ADDITIONAL="DMMDlg.h"/>
+        <FILE FILENAME="LockInDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="LockInDlg" FORMNAME="LockInDialog" DESIGNCLASS="" ADDITIONAL="LockInDlg.h"/>
+        <FILE FILENAME="ENDORParameterDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ENDORParameterDlg" FORMNAME="ENDORParametersDialog" DESIGNCLASS="" ADDITIONAL="ENDORParameterDlg.h"/>
+        <FILE FILENAME="splash.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="splash" FORMNAME="SplashForm" DESIGNCLASS="" ADDITIONAL="splash.h"/>
+        <FILE FILENAME="InstrumInitForm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="InstrumInitForm" FORMNAME="InstrumentInitForm" DESIGNCLASS="" ADDITIONAL="InstrumInitForm.h"/>
+        <FILE FILENAME="ConfirmDeleteFrm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ConfirmDeleteFrm" FORMNAME="DeleteConfirmDialog" DESIGNCLASS="" ADDITIONAL="ConfirmDeleteFrm.h"/>
+        <FILE FILENAME="MeasPointDialog.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MeasPointDialog" FORMNAME="MeasPointFrm" DESIGNCLASS="" ADDITIONAL="MeasPointDialog.h"/>
+        <FILE FILENAME="Keithley197.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Keithley197" FORMNAME="" DESIGNCLASS="" ADDITIONAL="Keithley197.h"/>
+        <FILE FILENAME="EPRMainCoilSweepDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="EPRMainCoilSweepDlg" FORMNAME="EPRMainSweepDialog" DESIGNCLASS="" ADDITIONAL="EPRMainCoilSweepDlg.h"/>
+        <FILE FILENAME="EPRSweepCoilDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="EPRSweepCoilDlg" FORMNAME="EPRSweepCoilDialog" DESIGNCLASS="" ADDITIONAL="EPRSweepCoilDlg.h"/>
+        <FILE FILENAME="ChannelSelectDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ChannelSelectDlg" FORMNAME="ChannelSelectDialog" DESIGNCLASS="" ADDITIONAL="ChannelSelectDlg.h"/>
+        <FILE FILENAME="CommentDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="CommentDlg" FORMNAME="CommentDialog" DESIGNCLASS="" ADDITIONAL="CommentDlg.h"/>
+        <FILE FILENAME="PlotRangeDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="PlotRangeDlg" FORMNAME="PlotRangeDialog" DESIGNCLASS="" ADDITIONAL="PlotRangeDlg.h"/>
+        <FILE FILENAME="HP54845A.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HP54845A" FORMNAME="" DESIGNCLASS="" ADDITIONAL="HP54845A.h"/>
+        <FILE FILENAME="HP54845A.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HP54845A" FORMNAME="" DESIGNCLASS="" ADDITIONAL="HP54845A.h"/>
+        <FILE FILENAME="InfiniumGateDialog.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="InfiniumGateDialog" FORMNAME="InfiniumGatesDlg" DESIGNCLASS="" ADDITIONAL="InfiniumGateDialog.h"/>
+        <FILE FILENAME="HilbertDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HilbertDlg" FORMNAME="HilbertDialog" DESIGNCLASS="" ADDITIONAL="HilbertDlg.h"/>
+        <FILE FILENAME="HP34401A.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HP34401A" FORMNAME="" DESIGNCLASS="" ADDITIONAL="HP34401A.h"/>
+        <FILE FILENAME="MeasOptionsForm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="MeasOptionsForm" FORMNAME="MeasureOptionsDlg" DESIGNCLASS="" ADDITIONAL="MeasOptionsForm.h"/>
+        <FILE FILENAME="HP8590.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HP8590" FORMNAME="" DESIGNCLASS="" ADDITIONAL="HP8590.h"/>
+        <FILE FILENAME="NHMFL_EPR_V6.todo" CONTAINERID="ToDo" LOCALCOMMAND="" UNITNAME="NHMFL_EPR_V6" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="PlotCurvesDialog.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="PlotCurvesDialog" FORMNAME="PlotCurvesDlg" DESIGNCLASS="" ADDITIONAL="PlotCurvesDialog.h"/>
+        <FILE FILENAME="PhaseDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="PhaseDlg" FORMNAME="RePhaseDialog" DESIGNCLASS="" ADDITIONAL="PhaseDlg.h"/>
+        <FILE FILENAME="TransientCorrDialog.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TransientCorrDialog" FORMNAME="TransientCorrDlg" DESIGNCLASS="" ADDITIONAL="TransientCorrDialog.h"/>
+        <FILE FILENAME="ManyCurveSelectDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ManyCurveSelectDlg" FORMNAME="ManyCurveDlg" DESIGNCLASS="" ADDITIONAL="ManyCurveSelectDlg.h"/>
+        <FILE FILENAME="HeaderViewForm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="HeaderViewForm" FORMNAME="ParamViewForm" DESIGNCLASS="" ADDITIONAL="HeaderViewForm.h"/>
+        <FILE FILENAME="GetSynFreqDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="GetSynFreqDlg" FORMNAME="GetSynFreqDialog" DESIGNCLASS="" ADDITIONAL="GetSynFreqDlg.h"/>
+        <FILE FILENAME="LogFileEdit.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="LogFileEdit" FORMNAME="LogFileForm" DESIGNCLASS="" ADDITIONAL="LogFileEdit.h"/>
+        <FILE FILENAME="CommentDlg17T.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="CommentDlg17T" FORMNAME="CommentDialog2" DESIGNCLASS="" ADDITIONAL="CommentDlg17T.h"/>
+        <FILE FILENAME="UserFormDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="UserFormDlg" FORMNAME="UserForm" DESIGNCLASS="" ADDITIONAL="UserFormDlg.h"/>
+        <FILE FILENAME="DAQDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DAQDlg" FORMNAME="DAQ_Dialog" DESIGNCLASS="" ADDITIONAL="DAQDlg.h"/>
+        <FILE FILENAME="DaqBoard.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DaqBoard" FORMNAME="" DESIGNCLASS="" ADDITIONAL="DaqBoard.h"/>
+        <FILE FILENAME="DaqRoutines.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DaqRoutines" FORMNAME="" DESIGNCLASS="" ADDITIONAL="DaqRoutines.h"/>
+        <FILE FILENAME="PulseForm.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="PulseForm" FORMNAME="PulsedDialog" DESIGNCLASS="" ADDITIONAL="PulseForm.h"/>
+        <FILE FILENAME="BN555.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="BN555" FORMNAME="" DESIGNCLASS="" ADDITIONAL="BN555.h"/>
+        <FILE FILENAME="RS232Dev.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="RS232Dev" FORMNAME="" DESIGNCLASS="" ADDITIONAL="RS232Dev.h"/>
+        <FILE FILENAME="DACSweepDlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="DACSweepDlg" FORMNAME="DacSweepDialog" DESIGNCLASS="" ADDITIONAL="DACSweepDlg.h"/>
+        <FILE FILENAME="TekScope.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="TekScope" FORMNAME="" DESIGNCLASS="" ADDITIONAL="TekScope.h"/>
+        <FILE FILENAME="BNC565_GPIB.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="BNC565_GPIB" FORMNAME="" DESIGNCLASS="" ADDITIONAL="BNC565_GPIB.h"/>
+        <FILE FILENAME="SMB100A.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SMB100A" FORMNAME="" DESIGNCLASS="" ADDITIONAL="SMB100A.h"/>
+        <FILE FILENAME="RF2Dlg.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="RF2Dlg" FORMNAME="RF2Dialog" DESIGNCLASS="" ADDITIONAL="RF2Dlg.h"/>
+        <FILE FILENAME="C:\Program Files (x86)\DaqX\Programming Language Support\daq\c\32-bit Enhanced API\LIB\BCB5DaqX.lib" CONTAINERID="LibTool" LOCALCOMMAND="" UNITNAME="BCB5DaqX" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="Keithley6220.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Keithley6220" FORMNAME="" DESIGNCLASS="" ADDITIONAL="Keithley6220.h"/>
+        <FILE FILENAME="K6220Dialog.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="K6220Dialog" FORMNAME="K6220Form" DESIGNCLASS="" ADDITIONAL="K6220Dialog.h"/>
+        <FILE FILENAME="ThermometerClass.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="ThermometerClass" FORMNAME="" DESIGNCLASS="" ADDITIONAL="ThermometerClass.h"/>
+        <FILE FILENAME="OImonitor.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="OImonitor" FORMNAME="OImonitorForm" DESIGNCLASS="" ADDITIONAL="OImonitor.h"/>
+        <FILE FILENAME="SRS830.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SRS830" FORMNAME="" DESIGNCLASS="" ADDITIONAL="SRS830.h"/>
+        <FILE FILENAME="SRS860.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="SRS860" FORMNAME="" DESIGNCLASS=""/>
+      </FILELIST>
+      <IDEOPTIONS>
+        <VersionInfo>
+          <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+          <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+          <VersionInfo Name="MajorVer">3</VersionInfo>
+          <VersionInfo Name="MinorVer">0</VersionInfo>
+          <VersionInfo Name="Release">0</VersionInfo>
+          <VersionInfo Name="Build">1</VersionInfo>
+          <VersionInfo Name="Debug">False</VersionInfo>
+          <VersionInfo Name="PreRelease">False</VersionInfo>
+          <VersionInfo Name="Special">False</VersionInfo>
+          <VersionInfo Name="Private">False</VersionInfo>
+          <VersionInfo Name="DLL">False</VersionInfo>
+          <VersionInfo Name="Locale">1033</VersionInfo>
+          <VersionInfo Name="CodePage">1252</VersionInfo>
+        </VersionInfo>
+        <VersionInfoKeys>
+          <VersionInfoKeys Name="CompanyName">National High Magnetic Field Lab</VersionInfoKeys>
+          <VersionInfoKeys Name="FileDescription">EMR Measurement Program</VersionInfoKeys>
+          <VersionInfoKeys Name="FileVersion">3.0.0.1</VersionInfoKeys>
+          <VersionInfoKeys Name="InternalName">Measure</VersionInfoKeys>
+          <VersionInfoKeys Name="LegalCopyright">J van Tol</VersionInfoKeys>
+          <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+          <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+          <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+          <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+          <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+        </VersionInfoKeys>
+        <HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Count">14</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item0">C:\Program Files\Borland\CBuilder6\Projects;..;C:\Program Files\Borland\CBuilder5\Bin;C:\Program Files\Common Files\Borland Shared\Images\Buttons;C:\Program Files\Borland;$(BCB)\include;$(BCB)\include\vcl;..\wsc;C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item1">..\;C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons;C:\Program Files\Borland;$(BCB)\include;$(BCB)\include\vcl;..\wsc;C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item2">C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons;C:\Program Files\Borland;$(BCB)\include;$(BCB)\include\vcl;..\wsc;C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item3">C:\Program Files\Borland\CBuilder5\Bin\;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;C:\Program Files\Borland\;$(BCB)\include;$(BCB)\include\vcl;..\wsc;C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item4">C:\Program Files\Borland\CBuilder5\Bin\;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;..\..\Builder4Projects;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item5">C:\Program Files\Borland\CBuilder5\Bin\;..\..\Programs;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;..\..\Builder4Projects;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item6">C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;..\..\Builder4Projects;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item7">..\..\Programs;..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\Builder4Projects;..\..\..\Program Files\Borland;..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item8">..\;..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\Builder4Projects;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item9">..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item10">..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\Builder4Projects;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item11">..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item12">$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\..\wsc</HistoryLists_hlIncludePath>
+          <HistoryLists_hlIncludePath Name="Item13">$(BCB)\include;$(BCB)\include\vcl;c:\hans\programs\general\include;c:\hans\programs\wsc</HistoryLists_hlIncludePath>
+        </HistoryLists_hlIncludePath>
+        <HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Count">12</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item0">C:\Program Files\Borland\CBuilder6\Projects;..;C:\Program Files\Borland\CBuilder5\Bin;C:\Program Files\Common Files\Borland Shared\Images\Buttons;C:\Program Files\Borland;C:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item1">..\;C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons;C:\Program Files\Borland;C:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item2">C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons;C:\Program Files\Borland;C:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item3">C:\Program Files\Borland\CBuilder5\Bin\;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item4">C:\Program Files\Borland\CBuilder5\Bin\;..\..\Programs;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item5">C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item6">..\..\Programs;..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\..\Program Files\Borland;..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item7">..\;..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item8">..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\Builder4Projects;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item9">..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item10">..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+          <HistoryLists_hlLibraryPath Name="Item11">$(BCB)\lib\obj;$(BCB)\lib</HistoryLists_hlLibraryPath>
+        </HistoryLists_hlLibraryPath>
+        <HistoryLists_hlDebugSourcePath>
+          <HistoryLists_hlDebugSourcePath Name="Count">1</HistoryLists_hlDebugSourcePath>
+          <HistoryLists_hlDebugSourcePath Name="Item0">$(BCB)\source\vcl</HistoryLists_hlDebugSourcePath>
+        </HistoryLists_hlDebugSourcePath>
+        <HistoryLists_hlConditionals>
+          <HistoryLists_hlConditionals Name="Count">2</HistoryLists_hlConditionals>
+          <HistoryLists_hlConditionals Name="Item0">_DEBUG</HistoryLists_hlConditionals>
+          <HistoryLists_hlConditionals Name="Item1">_RTLDLL;USEPACKAGES</HistoryLists_hlConditionals>
+        </HistoryLists_hlConditionals>
+        <HistoryLists_hlIntOutputDir>
+          <HistoryLists_hlIntOutputDir Name="Count">1</HistoryLists_hlIntOutputDir>
+          <HistoryLists_hlIntOutputDir Name="Item0">obj</HistoryLists_hlIntOutputDir>
+        </HistoryLists_hlIntOutputDir>
+        <HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Count">8</HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Item0">bin\</HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Item1">binItem1=bin</HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Item2"></HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Item3">binItem1=bin</HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Item4"></HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Item5">binItem1=binItem1=bin</HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Item6"></HistoryLists_hlFinalOutputDir>
+          <HistoryLists_hlFinalOutputDir Name="Item7"></HistoryLists_hlFinalOutputDir>
+        </HistoryLists_hlFinalOutputDir>
+        <Debugging>
+          <Debugging Name="DebugSourceDirs">$(BCB)\source\vcl</Debugging>
+        </Debugging>
+        <Parameters>
+          <Parameters Name="RunParams"></Parameters>
+          <Parameters Name="Launcher"></Parameters>
+          <Parameters Name="UseLauncher">False</Parameters>
+          <Parameters Name="DebugCWD"></Parameters>
+          <Parameters Name="HostApplication"></Parameters>
+          <Parameters Name="RemoteHost"></Parameters>
+          <Parameters Name="RemotePath"></Parameters>
+          <Parameters Name="RemoteParams"></Parameters>
+          <Parameters Name="RemoteLauncher"></Parameters>
+          <Parameters Name="UseRemoteLauncher">False</Parameters>
+          <Parameters Name="RemoteCWD"></Parameters>
+          <Parameters Name="RemoteDebug">False</Parameters>
+          <Parameters Name="Debug Symbols Search Path"></Parameters>
+          <Parameters Name="LoadAllSymbols">True</Parameters>
+          <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+        </Parameters>
+        <Linker>
+          <Linker Name="LibPrefix"></Linker>
+          <Linker Name="LibSuffix"></Linker>
+          <Linker Name="LibVersion"></Linker>
+        </Linker>
+      </IDEOPTIONS>
+    </BCBPROJECT>
+		<Source>
+			<Source Name="MainSource">NHMFL_EPR_V6.cpp</Source>
+		</Source>
+		<buildevents/>
+	</CPlusPlusBuilder.Personality>
+	<StarTeamAssociation></StarTeamAssociation>
+	<StarTeamNonRelativeFiles></StarTeamNonRelativeFiles>
+</BorlandProject>

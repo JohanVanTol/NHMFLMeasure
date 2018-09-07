@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="bin\Measure9T.exe"/>
+    <OBJFILES value="obj\Measure.obj obj\ChildWin.obj obj\about.obj obj\Myplot20.obj 
+      obj\Mydata.obj obj\GPIB_NatlInstrum.obj obj\Measmain.obj obj\ErrorBx.obj 
+      obj\GPIBTest.obj obj\RFSourceDlg.obj obj\RFAmplDlg.obj obj\BoxcarDlg.obj 
+      obj\Valid.obj obj\RS232Test.obj obj\IsoBusDevices.obj obj\ITCDlg.obj 
+      obj\ILMDlg.obj obj\IPS20Dlg.obj obj\IPS120Dlg.obj obj\HeaterOnChkDlg.obj 
+      obj\TimerFrm.obj obj\ZeroSweepCoilFrm.obj obj\MainFieldWaitFrm.obj 
+      obj\HeaterOffChkDlg.obj obj\DMMDlg.obj obj\LockInDlg.obj 
+      obj\ENDORParameterDlg.obj obj\splash.obj obj\InstrumInitForm.obj 
+      obj\ConfirmDeleteFrm.obj obj\MeasPointDialog.obj obj\Keithley197.obj 
+      obj\EPRMainCoilSweepDlg.obj obj\EPRSweepCoilDlg.obj 
+      obj\ChannelSelectDlg.obj obj\CommentDlg.obj obj\PlotRangeDlg.obj 
+      obj\HP54845A.obj obj\InfiniumGateDialog.obj obj\HilbertDlg.obj 
+      obj\HP34401A.obj obj\MeasOptionsForm.obj obj\HP8590.obj 
+      obj\PlotCurvesDialog.obj obj\PhaseDlg.obj obj\TransientCorrDialog.obj 
+      obj\ManyCurveSelectDlg.obj obj\HeaderViewForm.obj obj\GetSynFreqDlg.obj 
+      obj\LogFileEdit.obj"/>
+    <RESFILES value="Measure.res"/>
+    <IDLFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ChildWin.dfm about.dfm Measmain.dfm ErrorBx.dfm GPIBTest.dfm 
+      RFSourceDlg.dfm RFAmplDlg.dfm BoxcarDlg.dfm RS232Test.dfm ITCDlg.dfm 
+      ILMDlg.dfm IPS20Dlg.dfm IPS120Dlg.dfm HeaterOnChkDlg.dfm TimerFrm.dfm 
+      ZeroSweepCoilFrm.dfm MainFieldWaitFrm.dfm HeaterOffChkDlg.dfm DMMDlg.dfm 
+      LockInDlg.dfm ENDORParameterDlg.dfm splash.dfm InstrumInitForm.dfm 
+      ConfirmDeleteFrm.dfm MeasPointDialog.dfm EPRMainCoilSweepDlg.dfm 
+      EPRSweepCoilDlg.dfm ChannelSelectDlg.dfm CommentDlg.dfm PlotRangeDlg.dfm 
+      InfiniumGateDialog.dfm HilbertDlg.dfm MeasOptionsForm.dfm 
+      PlotCurvesDialog.dfm PhaseDlg.dfm TransientCorrDialog.dfm 
+      ManyCurveSelectDlg.dfm HeaderViewForm.dfm GetSynFreqDlg.dfm LogFileEdit.dfm"/>
+    <LIBFILES value="..\wsc\Wsc32.lib"/>
+    <LIBRARIES value="vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib"/>
+    <PACKAGES value="vclx.bpi rtl.bpi vcl.bpi dbrtl.bpi vcldb.bpi bdertl.bpi bcbsmp.bpi 
+      dclocx.bpi qrpt.bpi nmfast.bpi inetdb.bpi inet.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_RTLDLL"/>
+    <MAINSOURCE value="Measure.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder5\Bin&quot;;..;&quot;C:\Program Files\Common Files\Borland Shared\Images\Buttons&quot;;&quot;C:\Program Files\Borland&quot;;$(BCB)\include;$(BCB)\include\vcl;..\wsc;&quot;C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3&quot;"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder5\Bin&quot;;..;&quot;C:\Program Files\Common Files\Borland Shared\Images\Buttons&quot;;&quot;C:\Program Files\Borland&quot;;&quot;C:\Program Files\Borland\CBuilder4\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <WARNOPTSTR value=""/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=c:\PROGRA~1\BORLAND\CBUILD~3\lib\vcl60.csm -Hc -Q -w -Vx -Ve 
+      -Tkh30000 -ff -X- -r- -a8 -5 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-N2obj -N0obj -$Y+ -$W -$O- -$A8 -v -M -JPHNE"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-Iobj -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Measure.cpp" FORMNAME="" UNITNAME="Measure" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ChildWin.cpp" FORMNAME="DataFile" UNITNAME="ChildWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Measure.res" FORMNAME="" UNITNAME="Measure" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="about.cpp" FORMNAME="AboutBox" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Myplot20.cpp" FORMNAME="" UNITNAME="Myplot20" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Mydata.cpp" FORMNAME="" UNITNAME="Mydata" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GPIB_NatlInstrum.cpp" FORMNAME="" UNITNAME="GPIB_NatlInstrum" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Measmain.cpp" FORMNAME="MainForm" UNITNAME="Measmain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ErrorBx.cpp" FORMNAME="ErrorBox" UNITNAME="ErrorBx" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GPIBTest.cpp" FORMNAME="GPIBTestForm" UNITNAME="GPIBTest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RFSourceDlg.cpp" FORMNAME="RFSourceDialog" UNITNAME="RFSourceDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RFAmplDlg.cpp" FORMNAME="RFAmplifierDialog" UNITNAME="RFAmplDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BoxcarDlg.cpp" FORMNAME="BoxcarDialog" UNITNAME="BoxcarDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Valid.cpp" FORMNAME="" UNITNAME="Valid" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RS232Test.cpp" FORMNAME="RS232TestForm" UNITNAME="RS232Test" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\wsc\Wsc32.lib" FORMNAME="" UNITNAME="Wsc32" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IsoBusDevices.cpp" FORMNAME="" UNITNAME="IsoBusDevices" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ITCDlg.cpp" FORMNAME="ITCDialog" UNITNAME="ITCDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ILMDlg.cpp" FORMNAME="ILMDialog" UNITNAME="ILMDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPS20Dlg.cpp" FORMNAME="IPS20Dialog" UNITNAME="IPS20Dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPS120Dlg.cpp" FORMNAME="IPS120Dialog" UNITNAME="IPS120Dlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HeaterOnChkDlg.cpp" FORMNAME="HeaterOnCheckForm" UNITNAME="HeaterOnChkDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TimerFrm.cpp" FORMNAME="TimerForm" UNITNAME="TimerFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZeroSweepCoilFrm.cpp" FORMNAME="ZeroSweepCoilForm" UNITNAME="ZeroSweepCoilFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MainFieldWaitFrm.cpp" FORMNAME="MainFieldWaitForm" UNITNAME="MainFieldWaitFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HeaterOffChkDlg.cpp" FORMNAME="HeaterOffCheckForm" UNITNAME="HeaterOffChkDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DMMDlg.cpp" FORMNAME="DMM1Form" UNITNAME="DMMDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LockInDlg.cpp" FORMNAME="LockInDialog" UNITNAME="LockInDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ENDORParameterDlg.cpp" FORMNAME="ENDORParametersDialog" UNITNAME="ENDORParameterDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="splash.cpp" FORMNAME="SplashForm" UNITNAME="splash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="InstrumInitForm.cpp" FORMNAME="InstrumentInitForm" UNITNAME="InstrumInitForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ConfirmDeleteFrm.cpp" FORMNAME="DeleteConfirmDialog" UNITNAME="ConfirmDeleteFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MeasPointDialog.cpp" FORMNAME="MeasPointFrm" UNITNAME="MeasPointDialog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Keithley197.cpp" FORMNAME="" UNITNAME="Keithley197" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPRMainCoilSweepDlg.cpp" FORMNAME="EPRMainSweepDialog" UNITNAME="EPRMainCoilSweepDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPRSweepCoilDlg.cpp" FORMNAME="EPRSweepCoilDialog" UNITNAME="EPRSweepCoilDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ChannelSelectDlg.cpp" FORMNAME="ChannelSelectDialog" UNITNAME="ChannelSelectDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CommentDlg.cpp" FORMNAME="CommentDialog" UNITNAME="CommentDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PlotRangeDlg.cpp" FORMNAME="PlotRangeDialog" UNITNAME="PlotRangeDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HP54845A.cpp" FORMNAME="" UNITNAME="HP54845A" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HP54845A.cpp" FORMNAME="" UNITNAME="HP54845A" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="InfiniumGateDialog.cpp" FORMNAME="InfiniumGatesDlg" UNITNAME="InfiniumGateDialog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HilbertDlg.cpp" FORMNAME="HilbertDialog" UNITNAME="HilbertDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HP34401A.cpp" FORMNAME="" UNITNAME="HP34401A" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MeasOptionsForm.cpp" FORMNAME="MeasureOptionsDlg" UNITNAME="MeasOptionsForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HP8590.cpp" FORMNAME="" UNITNAME="HP8590" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Measure.todo" FORMNAME="" UNITNAME="Measure" CONTAINERID="ToDo" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PlotCurvesDialog.cpp" FORMNAME="PlotCurvesDlg" UNITNAME="PlotCurvesDialog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PhaseDlg.cpp" FORMNAME="RePhaseDialog" UNITNAME="PhaseDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TransientCorrDialog.cpp" FORMNAME="TransientCorrDlg" UNITNAME="TransientCorrDialog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ManyCurveSelectDlg.cpp" FORMNAME="ManyCurveDlg" UNITNAME="ManyCurveSelectDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HeaderViewForm.cpp" FORMNAME="ParamViewForm" UNITNAME="HeaderViewForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GetSynFreqDlg.cpp" FORMNAME="GetSynFreqDialog" UNITNAME="GetSynFreqDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LogFileEdit.cpp" FORMNAME="LogFileForm" UNITNAME="LogFileEdit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=3
+MinorVer=0
+Release=0
+Build=1
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=National High Magnetic Field Lab
+FileDescription=EMR Measurement Program
+FileVersion=3.0.0.1
+InternalName=Measure
+LegalCopyright=J van Tol
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=12
+Item0=C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons;C:\Program Files\Borland;$(BCB)\include;$(BCB)\include\vcl;..\wsc;C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3
+Item1=C:\Program Files\Borland\CBuilder5\Bin\;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;C:\Program Files\Borland\;$(BCB)\include;$(BCB)\include\vcl;..\wsc;C:\Documents and Settings\vantol\My Documents\Programs\NewMeasure3
+Item2=C:\Program Files\Borland\CBuilder5\Bin\;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;..\..\Builder4Projects;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc
+Item3=C:\Program Files\Borland\CBuilder5\Bin\;..\..\Programs;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;..\..\Builder4Projects;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc
+Item4=C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;..\..\Builder4Projects;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc
+Item5=..\..\Programs;..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\Builder4Projects;..\..\..\Program Files\Borland;..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc
+Item6=..\;..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\Builder4Projects;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\wsc
+Item7=..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\..\wsc
+Item8=..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\Builder4Projects;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\..\wsc
+Item9=..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\..\wsc
+Item10=$(BCB)\include;$(BCB)\include\vcl;..\..\general\include;..\..\wsc
+Item11=$(BCB)\include;$(BCB)\include\vcl;c:\hans\programs\general\include;c:\hans\programs\wsc
+
+[HistoryLists\hlLibraryPath]
+Count=10
+Item0=C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons;C:\Program Files\Borland;C:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\Program Files\Borland\CBuilder5\Bin\;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item2=C:\Program Files\Borland\CBuilder5\Bin\;..\..\Programs;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item3=C:\Program Files\Borland\CBuilder5\Bin;..;C:\Program Files\Common Files\Borland Shared\Images\Buttons\;C:\Program Files\Borland\;C:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\..\Programs;..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\..\Program Files\Borland;..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item5=..\;..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item6=..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\..\Builder4Projects;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item7=..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item8=..\..\..\..\Program Files\Common Files\Borland Shared\Images\Buttons;..\;..\..\..\..\Program Files\Borland;..\..\..\..\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item9=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=_DEBUG
+Item1=_RTLDLL;USEPACKAGES
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=obj
+
+[HistoryLists\hlFinalOutputDir]
+Count=8
+Item0=bin\
+Item1=binItem1=bin
+Item2=
+Item3=binItem1=bin
+Item4=
+Item5=binItem1=binItem1=bin
+Item6=
+Item7=
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
