@@ -714,6 +714,7 @@ int MyPlot::GetnTraces(int Ax) const
 		default : return 0;
 			break;
 	}
+	return 0;
 }
 
 void MyPlot::ResetTraces()

@@ -86,11 +86,11 @@ object PulsedDialog: TPulsedDialog
       ParentFont = False
     end
     object Label5: TLabel
-      Left = 17
-      Top = 127
-      Width = 14
+      Left = 3
+      Top = 129
+      Width = 53
       Height = 20
-      Caption = 'D'
+      Caption = 'D-Prot'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -142,7 +142,7 @@ object PulsedDialog: TPulsedDialog
       Top = 238
       Width = 49
       Height = 16
-      Caption = 'H -Prot'
+      Caption = 'H -RF2'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -171,12 +171,12 @@ object PulsedDialog: TPulsedDialog
     object P4DelayEdit: TMaskEdit
       Left = 64
       Top = 129
-      Width = 80
+      Width = 79
       Height = 21
       EditMask = '!999999999999;1;_'
       MaxLength = 12
       TabOrder = 2
-      Text = '        3000'
+      Text = '           0'
     end
     object P2DelayEdit: TMaskEdit
       Left = 64
@@ -210,42 +210,42 @@ object PulsedDialog: TPulsedDialog
     object P1WidthEdit: TMaskEdit
       Left = 256
       Top = 48
-      Width = 80
+      Width = 79
       Height = 21
       EditMask = '!999999999999;1;_'
       MaxLength = 12
       TabOrder = 6
-      Text = '         100'
+      Text = '         200'
     end
     object P2WidthEdit: TMaskEdit
       Left = 256
       Top = 75
-      Width = 80
+      Width = 79
       Height = 21
       EditMask = '!999999999999;1;_'
       MaxLength = 12
       TabOrder = 7
-      Text = '         100'
+      Text = '         200'
     end
     object P3WidthEdit: TMaskEdit
       Left = 256
       Top = 102
-      Width = 80
+      Width = 79
       Height = 21
       EditMask = '!999999999999;1;_'
       MaxLength = 12
       TabOrder = 8
-      Text = '         100'
+      Text = '         200'
     end
     object P4WidthEdit: TMaskEdit
       Left = 256
       Top = 129
-      Width = 80
+      Width = 79
       Height = 21
       EditMask = '!999999999999;1;_'
       MaxLength = 12
       TabOrder = 9
-      Text = '         100'
+      Text = '        2200'
     end
     object P4DelayStepEdit: TMaskEdit
       Left = 160
@@ -390,12 +390,12 @@ object PulsedDialog: TPulsedDialog
     object P6DelayEdit: TMaskEdit
       Left = 64
       Top = 183
-      Width = 80
+      Width = 79
       Height = 21
       EditMask = '!999999999999;1;_'
       MaxLength = 12
       TabOrder = 25
-      Text = '        3000'
+      Text = '        2000'
     end
     object P7DelayEdit: TMaskEdit
       Left = 64
@@ -724,8 +724,6 @@ object PulsedDialog: TPulsedDialog
       Height = 17
       Hint = 'Reads function3 from infinium'
       Caption = 'Quadrature'
-      Checked = True
-      State = cbChecked
       TabOrder = 9
     end
     object TwoChannelCheckBox: TCheckBox
@@ -734,6 +732,8 @@ object PulsedDialog: TPulsedDialog
       Width = 175
       Height = 17
       Caption = '2 Channels (CH1,3 or Math1,2)'
+      Checked = True
+      State = cbChecked
       TabOrder = 10
     end
     object ChACheckBox: TCheckBox
@@ -751,6 +751,8 @@ object PulsedDialog: TPulsedDialog
       Height = 17
       Hint = 'subtracts second gate value from first'
       Caption = 'Correct Baseline Directly'
+      Checked = True
+      State = cbChecked
       TabOrder = 12
     end
   end

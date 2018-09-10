@@ -94,3 +94,6 @@ void __fastcall TPulsedDialog::CancelBitButtonClick(TObject *Sender)
 
 
 
+
+
+
