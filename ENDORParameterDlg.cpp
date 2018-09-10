@@ -224,11 +224,11 @@ int TENDORParametersDialog::SetAllData()
 //  Set current frequency to start of sweep
 	RFsource->SetFreq(StartFreqEdit->Text.ToDouble());
 	RFsource->SetPower(PowerEdit->Text.ToDouble());
-	RFsource->SetAFfreq(ModFreqEdit->Text.ToDouble());
+//	RFsource->SetAFfreq(ModFreqEdit->Text.ToDouble());
 	RFsource->SetStartFreq(StartFreqEdit->Text.ToDouble());
 	RFsource->SetStopFreq(StopFreqEdit->Text.ToDouble());
 	RFsource->SetStep(StepEdit->Text.ToDouble());
-	RFsource->SetStepTime(DwellEdit->Text.ToInt());
+//	RFsource->SetStepTime(DwellEdit->Text.ToInt());
 
 	Step = StepEdit->Text.ToDouble();
 	StartFreq = StartFreqEdit->Text.ToDouble();

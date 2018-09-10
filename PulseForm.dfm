@@ -744,6 +744,15 @@ object PulsedDialog: TPulsedDialog
       Caption = 'Ch A On/Off'
       TabOrder = 11
     end
+    object BaseLineCorrectionCheckBox: TCheckBox
+      Left = 299
+      Top = 98
+      Width = 158
+      Height = 17
+      Hint = 'subtracts second gate value from first'
+      Caption = 'Correct Baseline Directly'
+      TabOrder = 12
+    end
   end
   object SetButton: TButton
     Left = 233

@@ -104,7 +104,7 @@ int SMB100A::SetStep(double kHz)
 	status = GPIBSendCommand(address, command);
 	sprintf(command,"SOUR:SWE:FREQ:MODE MAN");
 	status = GPIBSendCommand(address, command);
-	sprintf(command,"SOUR:SWE:STEP:LIN %f kHz", kHz);
+	sprintf(command,"SOUR:SWE:FREQ:STEP:LIN %f kHz", kHz);
 	status = GPIBSendCommand(address, command);
 	return status;
 }
@@ -121,7 +121,7 @@ int SMB100A::Step(double MHz)
 int SMB100A::Step()
 {
 	if (address == 0) return 0;
-	sprintf(command,"FREQ:MAN UP");
+	sprintf(command,"SOUR:FREQ:MAN UP");
 	status = GPIBSendCommand(address, command);
 	return status;
 }
@@ -874,7 +874,7 @@ int SMB100A::SetSweepType(int type)
 int SMB100A::SetStepTime(int ms)
 {
 	if (address == 0) return 0;
-	sprintf(command,"SWE:DWEL %d ms", ms);      // range 2 ms -100 s
+	sprintf(command,"SWE:DWEL %dms", ms);      // range 2 ms -100 s
 	status = GPIBSendCommand(address, command);
 	return status;
 }

@@ -800,7 +800,7 @@ void TMainForm::PrepareEPRMeasurement()
 	Interrupted = 0;
 	UpdateMenuItems(this);
 	MeasPointFrm->Show();
-	if (tc1 < tc2) EPRMeasureTimer->Interval = (int)(1000*tc1/3);
+//	if (tc1 < tc2) EPRMeasureTimer->Interval = (int)(1000*tc1/3);
 	EPRSweepMeasureTimer->Interval = EPRMeasureTimer->Interval;
 	ReturnSweep = false;
 	if (Persistent)
@@ -1722,13 +1722,13 @@ void TMainForm::PulsedPrepare()
 		PulsedDialog->P3WidthEdit->Text.c_str(),
 		PulsedDialog->P3WidthStepEdit->Text.c_str());
 	CurrFile->AddHeader(line);
-	sprintf(line,"Pulse D: delay %s ns, delaystep %s ns, width %s ns, widthstep %s ns \n",
+	sprintf(line,"Pulse D: delay %s ns, delaystep %s ns, width %s ns, widthstep %s ns (amplifier protection)\n",
 		PulsedDialog->P4DelayEdit->Text.c_str(),
 		PulsedDialog->P4DelayStepEdit->Text.c_str(),
 		PulsedDialog->P4WidthEdit->Text.c_str(),
 		PulsedDialog->P4WidthStepEdit->Text.c_str());
 	CurrFile->AddHeader(line);
-	sprintf(line,"Pulse E is driving the microwave switch, the sum of A, B, C, and D");
+	sprintf(line,"Pulse E is driving the microwave switch, the sum of A, B, C \n");
 	CurrFile->AddHeader(line);
 	sprintf(line,"Pulse F (Scope Trig): delay %s ns, delaystep %s ns, width %s ns, widthstep %s ns \n",
 		PulsedDialog->P6DelayEdit->Text.c_str(),
@@ -1736,13 +1736,13 @@ void TMainForm::PulsedPrepare()
 		PulsedDialog->P6WidthEdit->Text.c_str(),
 		PulsedDialog->P6WidthStepEdit->Text.c_str());
 	CurrFile->AddHeader(line);
-	sprintf(line,"Pulse G: delay %s ns, delaystep %s ns, width %s ns, widthstep %s ns \n",
+	sprintf(line,"Pulse G (RF1): delay %s ns, delaystep %s ns, width %s ns, widthstep %s ns \n",
 		PulsedDialog->P7DelayEdit->Text.c_str(),
 		PulsedDialog->P7DelayStepEdit->Text.c_str(),
 		PulsedDialog->P7WidthEdit->Text.c_str(),
 		PulsedDialog->P7WidthStepEdit->Text.c_str());
 	CurrFile->AddHeader(line);
-	sprintf(line,"Pulse H (Prot): delay %s ns, delaystep %s ns, width %s ns, widthstep %s ns \n",
+	sprintf(line,"Pulse H (RF2): delay %s ns, delaystep %s ns, width %s ns, widthstep %s ns \n",
 		PulsedDialog->P8DelayEdit->Text.c_str(),
 		PulsedDialog->P8DelayStepEdit->Text.c_str(),
 		PulsedDialog->P8WidthEdit->Text.c_str(),
@@ -2252,10 +2252,13 @@ void __fastcall TMainForm::GoToStartFieldTimerTimer(TObject *Sender)
 	   CurrFile->Measuring = true;
 	   CurrentPoint = 0;
 	   if (!ReturnSweep) CurrentSweep++;
-	   EPRMeasureTimer->Enabled = true;
+	   time0 = GetTickCount();
+ 	   EPRMeasureTimer->Enabled = true;
+
 	   MeasPointFrm->StatusLabel->Caption = "Taking data...";
+//	   EPRMeasureTimerTimer(this);
    }
-   	else return;
+	else return;
    time0 = GetTickCount();
 
    int* chan = NULL;
@@ -2289,7 +2292,7 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 	int ok;
 	int millis, delay1, delay2;
 	double field;
-
+	double baselineCorrected;
 	double fastspeed = 2.0;                             // To be revisited
 
 	char errorr[80];
@@ -2348,9 +2351,13 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 			{
 				Tek7->Stop();
 //            millis = GetTickCount();
+				Tek7->RetrieveScaleSettings(0);
 				ok = Tek7->RetrieveBuffer(1);
 //            delay1 = GetTickCount()-millis;
-				if (PulsedDialog->TwoChannelCheckBox->Checked) ok = Tek7->RetrieveBuffer(3);
+				if (PulsedDialog->TwoChannelCheckBox->Checked) {
+					Tek7->RetrieveScaleSettings(0);
+					ok = Tek7->RetrieveBuffer(3);
+				}
 //            delay2 = GetTickCount()-millis;
 				Tek7->Run();
 				if (Tek7->ErrorTest(errorr) != 0)
@@ -2364,8 +2371,14 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 					return; // if aquisition unfinished return
 				}
 		 //   Infinium->Stop();
-				Tek7->RetrieveScaleSettings(0);
+//				Tek7->RetrieveScaleSettings(0);
 				ok = Tek7->GetGateValues(NumberOfGates,P1,T1,T2,1);
+				if ((NumberOfGates ==2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+				{
+					baselineCorrected = P1->Get(1) - P1->Get(2);
+					P1->Set(1, baselineCorrected);
+				}
+
 				for (int i=1;i<=NumberOfGates;i++)
 					P.Set(i, P1->Get(i));
 				if (PulsedDialog->TwoChannelCheckBox->Checked)
@@ -2398,6 +2411,8 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 			 //   Infinium->Stop();
 
 				ok = Infinium->GetGateValues(NumberOfGates,P1,T1,T2,1);
+//				if ((NumberOfGates ==2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+//					P1->Set(1, P1->Get(1) - P1->Get(2));
 				for (int i=1;i<=NumberOfGates;i++)
 					P.Set(i, P1->Get(i));
 				ok = Infinium->GetGateValues(NumberOfGates,P1,T1,T2,3);
@@ -2408,8 +2423,15 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 				}
 			}
 			if (PulsedDialog->TwoChannelCheckBox->Checked)
+			{
+				if ((NumberOfGates == 2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+				{
+					baselineCorrected = P1->Get(1) - P1->Get(2);
+					P1->Set(1, baselineCorrected);
+				}
 				for (int i=1;i<=NumberOfGates;i++)
 					P.Set(NumberOfGates+i, P1->Get(i));
+            }
 			delete P1;
 //            Infinium->Clear();
 		 //   Infinium->Run();
@@ -2470,6 +2492,8 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 				P.Set(1,LockIn1->ReadOutput(1));
 
 				ok = Infinium->GetGateValues(NumberOfGates,P1,T1,T2,1);
+//				if ((NumberOfGates ==2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+//					P1->Set(1, P1->Get(1) - P1->Get(2));
 				for (int i=1;i<=NumberOfGates;i++)
 					P.Set(i+1, P1->Get(i));
 				ok = Infinium->GetGateValues(NumberOfGates,P1,T1,T2,3);
@@ -2479,6 +2503,8 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 					ErrorBox->ShowModal();
 				}
 			}
+//			if ((NumberOfGates ==2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+//				P1->Set(1, P1->Get(1) - P1->Get(2));
 			for (int i=1;i<=NumberOfGates;i++)
 				P.Set(NumberOfGates+i+1, P1->Get(i));
 			delete P1;
@@ -2512,10 +2538,21 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 				Tek7->Run();
 
 				ok = Tek7->GetGateValues(NumberOfGates,P1,T1,T2,9);
+				if ((NumberOfGates == 2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+				{
+					baselineCorrected = P1->Get(1) - P1->Get(2);
+					P1->Set(1, baselineCorrected);
+				}
+
 				for (int i=1;i<=NumberOfGates;i++)
 					P.Set(i, P1->Get(i));
 				if (PulsedDialog->TwoChannelCheckBox->Checked)
 					ok = Tek7->GetGateValues(NumberOfGates,P1,T1,T2,10);
+				if ((NumberOfGates == 2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+				{
+					baselineCorrected = P1->Get(1) - P1->Get(2);
+					P1->Set(1, baselineCorrected);
+				}
 				if (Tek7->ErrorTest(errorr) != 0)
 				{
 					ErrorBox->ErrorMessage->Caption = errorr;
@@ -2556,8 +2593,10 @@ void __fastcall TMainForm::EPRMeasureTimerTimer(TObject *Sender)
 				}
 			}
 			if (PulsedDialog->TwoChannelCheckBox->Checked)
+			{
 				for (int i=1;i<=NumberOfGates;i++)
 					P.Set(NumberOfGates+i, P1->Get(i));
+			}
 			delete P1;
 //            Infinium->Clear();
 		 //   Infinium->Run();
@@ -4860,6 +4899,7 @@ void __fastcall TMainForm::MeasurePulsTimerTimer(TObject *Sender)
 {
 //  parameters
 	double delay, x1,x2,y1,y2;
+	double baselineCorrected;
 //	double EndF = ENDORParametersDialog->GetEndFreq();
 	int ok;
 	char errorr[80];
@@ -4923,12 +4963,22 @@ void __fastcall TMainForm::MeasurePulsTimerTimer(TObject *Sender)
 			ok = Tek7->GetGateValues(gates,P1,T1,T2,9);
 		   else
 			ok = Tek7->GetGateValues(gates,P1,T1,T2,1);
+		if ((NumberOfGates == 2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+		{
+			baselineCorrected = P1->Get(1) - P1->Get(2);
+			P1->Set(1, baselineCorrected);
+		}
 		for (int i=1;i<=NumberOfGates;i++)
 					P.Set(i, P1->Get(i));
 		if (mathmode == 1)
 			ok = Tek7->GetGateValues(gates,P1,T1,T2,10);
 		   else
 			ok = Tek7->GetGateValues(gates,P1,T1,T2,3);
+		if ((NumberOfGates == 2) && (PulsedDialog->BaseLineCorrectionCheckBox->Checked))
+		{
+			baselineCorrected = P1->Get(1) - P1->Get(2);
+			P1->Set(1, baselineCorrected);
+		}
 
 
 	  }
@@ -5469,7 +5519,7 @@ void __fastcall TMainForm::DacSweepTimerTimer(TObject *Sender)
 void __fastcall TMainForm::PulsedEndorTimerTimer(TObject *Sender)
 {
 //  parameters
-	double Freq, x1,x2,y1,y2;
+	double Fstep, Freq, x1,x2,y1,y2;
 	double EndF = ENDORParametersDialog->GetEndFreq();
 	int ok;
 	char errorr[80];
@@ -5574,7 +5624,7 @@ void __fastcall TMainForm::PulsedEndorTimerTimer(TObject *Sender)
 
 	Freq = RFsource->GetFreq();
 	P.Set(0, Freq);
-
+	Fstep = RFsource->GetStep();
 
 	MeasPointFrm->XLabel->Caption = Freq;
 	MeasPointFrm->PointLabel->Caption = CurrentPoint;
@@ -5632,7 +5682,7 @@ void __fastcall TMainForm::PulsedEndorTimerTimer(TObject *Sender)
    {
 	  if (TakingData)
 	  {
-		RFsource->Step();
+		RFsource->SetFreq(Freq+Fstep/1000.0);
 		if (Tek7->GetAddress() > 0) Tek7->Run(); else Infinium->Run();
 	  }
 	  PulsedEndorTimer->Enabled = true;
