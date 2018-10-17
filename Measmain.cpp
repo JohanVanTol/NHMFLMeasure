@@ -1040,6 +1040,7 @@ int TMainForm::InitializeRemoteDevices()
 	}
 	  else
 	  {
+		InitForm->Memo->Font->Color = clGreen;
 		InitForm->Memo->Lines->Add("Initialization file MEASURE.INI opened");
 
 		// if InitFile opened correctly
@@ -1356,12 +1357,12 @@ int TMainForm::InitializeRemoteDevices()
             if (SweepCoil->Test() == 0)
             {
                InitForm->Memo->Lines->Add("SweepCoil OK");
-               SweepCoil->SetExtendedResolution(1);
+			   SweepCoil->SetExtendedResolution(1);
 			}
-             else
-             {
+			 else
+			 {
                InitForm->Memo->Lines->Add("SweepCoil communication failed. Address set to 0");
-               SweepCoil->Reset(IsoBusSerialPort,0);
+			   SweepCoil->Reset(IsoBusSerialPort,0);
              }
         }
 
