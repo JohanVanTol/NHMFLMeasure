@@ -2,4 +2,6 @@
 \__history
 \bin
 \obj
+*.bdsproj
+*.bdsproj.local
 
