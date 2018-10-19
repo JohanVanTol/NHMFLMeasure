@@ -1040,7 +1040,6 @@ int TMainForm::InitializeRemoteDevices()
 	}
 	  else
 	  {
-		InitForm->Memo->Font->Color = clGreen;
 		InitForm->Memo->Lines->Add("Initialization file MEASURE.INI opened");
 
 		// if InitFile opened correctly
@@ -3684,15 +3683,18 @@ int TMainForm::AddInstrumentHeader()
 		{
 			// this assumes a direct read from the Voltmeter with 10mA or 1mA applied
 			Vpos = DMM2->Read();
-			if (ITC->GetTemperature(1) > 10.0)
+			if (Vpos > 0.00093)               //  Assumes a 10microAmp curremt
 			{
-				Rohm = Vpos*1.0e5;   // assuming 10 mA
+				Rohm = Vpos*1.0e5;   // assuming 10 microA
 				Tuncorr = Cernox10mA->GetTemperature(Rohm);
 			}
 			  else
 			  {
-				Rohm = Vpos*1.0e6;   // assuming 1 mA
+				Rohm = Vpos*1.0e6;   // assuming 1 microA
 				Tuncorr = Cernox1mA->GetTemperature(Rohm);
+				if (Tuncorr >900) {
+				   Tuncorr = Cernox10mA->GetTemperature(Rohm); 
+				}
 			  }
 			sprintf(line,"For Cernox1 %f Ohm corresponds to T = %f K at 0 T \n", Rohm, Tuncorr);
 		 }
